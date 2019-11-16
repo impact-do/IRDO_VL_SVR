@@ -6,15 +6,15 @@ block content
     p(class='card-text')
       //- a.lead(href='/info') Click Me
 
-  label(for='Facilities') Facility
-    const FacilitiesOptions = [{value: 'Bondo Dice'}, {value: 'Asembo Dice'}, {value: 'Madiany Facility'}]
+  form-group
+    label(for='faciility') Enter The name of the Facility
+      input.form-control(id='facility' name='facility' type='text' placholder='Enter Facility Name')
+    .br
 
-    .br
-    .br
 
   form-group
-    label(for='email') Patient CCCNo
-      input.form-control(id='patient_ccno' name='email' type='patient_ccno' placholder='Enter the correct CCCNo')
+    label(for='patient_cccNO') Patient CCCNo
+      input.form-control(id='patient_ccno' name='patient_ccno' type='patient_ccno' placholder='Enter the correct CCCNo')
     .br
     button.btn.btn-primary(type='submit') Search
 
