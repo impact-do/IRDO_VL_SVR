@@ -1,5 +1,28 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div(class='card card-body bump-down')
+    h4(class='card-title') Welcome IRDO VL Extraction System
+    p(class='card-text')
+      //- a.lead(href='/info') Click Me
+
+  label(for='Facilities') Facility
+    const FacilitiesOptions = [{value: 'Bondo Dice'}, {value: 'Asembo Dice'}, {value: 'Madiany Facility'}]
+
+    .br
+    .br
+
+  form-group
+    label(for='email') Patient CCCNo
+      input.form-control(id='patient_ccno' name='email' type='patient_ccno' placholder='Enter the correct CCCNo')
+    .br
+    button.btn.btn-primary(type='submit') Search
+
+
+  table(style='width:50%', border='1')
+    tr
+      th patient CCCNo.
+      th VL Date
+      th VL Result
+
+ 
